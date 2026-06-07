@@ -28,7 +28,7 @@ async function fetchServerStatus() {
     const playerCountEl = document.getElementById('playerCount').querySelector('span');
     const motdContent = document.getElementById('motdContent');
     try {
-        const response = await fetch('https://api.mcsrvstat.us/3/34.35.118.129:25570');
+        const response = await fetch('https://api.mcsrvstat.us/3/loopedza.xyz');
         const data = await response.json();
         if (data.online) {
             statusDot.classList.add('online'); statusDot.classList.remove('offline');
